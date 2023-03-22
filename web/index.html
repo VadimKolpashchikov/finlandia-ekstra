@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Финляндия Экстра</title>
+    <link rel="preload" href="new-site-vue/build/images/header-new/finlandia-ekstra-header-img.webp" as="image" type="image/webp">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Жукваэри -->
+    <script src="https://apispn.ru/js-min/jquery-3.5.1.min.js"></script>
+    <!-- Жукваэри -->
+    <!--style new-site-->
+    <link rel="stylesheet" href="new-site-vue/build/css/main.min.css">
+</head>
+<body id="body">
+<div id="app"></div>
+<!--vue new-site data-->
+<script>
+    const products = JSON.parse('{"482041":{"name":"\u0421\u0410 \u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f 2021 (\u0417\u043c\u0435\u0435\u0432\u0438\u043a) 15 \u043b","oldPrice":11099,"price":8850,"oldPriceF":"11 099","priceF":"8 850","image":"","discount":0},"482042":{"name":"\u0421\u0410 \u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f 2021 (\u0417\u043c\u0435\u0435\u0432\u0438\u043a) 22 \u043b","oldPrice":12550,"price":9390,"oldPriceF":"12 550","priceF":"9 390","image":"","discount":0},"482043":{"name":"\u0421\u0410 \u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f 2021 (\u0417\u043c\u0435\u0435\u0432\u0438\u043a) 26 \u043b \u0444\u0435\u0439\u043a","oldPrice":13690,"price":9990,"oldPriceF":"13 690","priceF":"9 990","image":"","discount":0},"482044":{"name":"\u0421\u0410 \u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f 2021 (\u0417\u043c\u0435\u0435\u0432\u0438\u043a) 30 \u043b ","oldPrice":14290,"price":9990,"oldPriceF":"14 290","priceF":"9 990","image":"","discount":0},"482040":{"name":"\u041a\u0440\u044b\u0448\u043a\u0430-\u0430\u0440\u043e\u043c\u0430\u0442\u043e\u0440 \u0434\u043b\u044f \u0441\u0443\u0445\u043e\u043f\u0430\u0440\u043d\u0438\u043a\u0430 \u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f 2021","oldPrice":1090,"price":590,"oldPriceF":"1 090","priceF":"590","image":"","discount":0},"482360":{"name":"\u0421\u0410 Merkel 15\u043b 2022","oldPrice":16990,"price":8490,"oldPriceF":"16 990","priceF":"8 490","image":"","discount":0},"482063":{"name":"\u0426\u0430\u0440\u0433\u0430 \u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f\\/\u0413\u0435\u0440\u043c\u0430\u043d\u0438\u044f 2021 1,5 \u0434\u044e\u0439\u043c\u0430","oldPrice":2990,"price":1990,"oldPriceF":"2 990","priceF":"1 990","image":"https:\\/\\/apispn.ru\\/apiImage\\/18461\\/carga-bez-spn-2.jpg","discount":0},"367":{"name":"\u0423\u0433\u043e\u043b\u044c\u043d\u0430\u044f \u043a\u043e\u043b\u043e\u043d\u043d\u0430","oldPrice":2150,"price":1690,"oldPriceF":"2 150","priceF":"1 690","image":"https:\\/\\/apispn.ru\\/apiImage\\/1469\\/ug.jpg","discount":0},"3598":{"name":"\u041f\u043e\u043f\u0443\u0433\u0430\u0439 (1690 \u0440\u0443\u0431)(\u0414\u041e\u041f)","oldPrice":2500,"price":1690,"oldPriceF":"2 500","priceF":"1 690","image":"https:\\/\\/apispn.ru\\/apiImage\\/1479\\/popugay__3.jpg","discount":0},"482062":{"name":"\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u043f\u0440\u043e\u043a\u043b\u0430\u0434\u043e\u043a 110 \u043c\u043c \u0424\u0438\u043d\u043b\u044f\u043d\u0434\u0438\u044f 2021\\/\u0413\u0435\u0440\u043c\u0430\u043d\u0438\u044f 2021","oldPrice":490,"price":390,"oldPriceF":"490","priceF":"390","image":"https:\\/\\/apispn.ru\\/apiImage\\/18444\\/prokladki_gerfin.png","discount":0},"273":{"name":"\u041a\u043e\u043d\u0446\u0435\u0442\u0440\u0430\u0442 \\"\u0412\u0441\u0435 \u043d\u0430\u043f\u0438\u0442\u043a\u0438 \u043c\u0438\u0440\u0430\\"","oldPrice":1500,"price":990,"oldPriceF":"1 500","priceF":"990","image":"https:\\/\\/apispn.ru\\/apiImage\\/1509\\/4_min.jpg","discount":0},"482019":{"name":"\u0421\u041f\u041d \u043c\u0435\u0434\u043d 3,5\u04453,5 (0,5\u043a\u0433)","oldPrice":1350,"price":1100,"oldPriceF":"1 350","priceF":"1 100","image":"https:\\/\\/apispn.ru\\/apiImage\\/17557\\/spnmed.600x600.png","discount":0},"482018":{"name":"\u0421\u041f\u041d \u043d\u0435\u0440\u0436 3,5\u04453,5 (0,5\u043a\u0433)","oldPrice":1690,"price":990,"oldPriceF":"1 690","priceF":"990","image":"https:\\/\\/apispn.ru\\/apiImage\\/17563\\/spn-444_2.600x600.png","discount":0},"2637":{"name":"\u0414\u0438\u043e\u043f\u0442\u0440 1,5 \u0434\u044e\u0439\u043c\u0430","oldPrice":5500,"price":1690,"oldPriceF":"5 500","priceF":"1 690","image":"https:\\/\\/apispn.ru\\/apiImage\\/1729\\/dioptr.jpg","discount":0},"482721":{"name":"\u0423\u0433\u043e\u043b\u044c\u043d\u0430\u044f \u043a\u043e\u043b\u043e\u043d\u043d\u0430 \u043d\u0430 \u0431\u0430\u043d\u043a\u0443 ","oldPrice":2090,"price":1590,"oldPriceF":"2 090","priceF":"1 590","image":"","discount":0},"482722":{"name":"\u041f\u043e\u043f\u0443\u0433\u0430\u0439 \u043d\u0430 \u0431\u0430\u043d\u043a\u0443 ","oldPrice":2090,"price":1590,"oldPriceF":"2 090","priceF":"1 590","image":"","discount":0}}')
+    const ids = {
+        f15: 482041,
+        f22: 482042,
+        f26: 482043,
+        f30: 482044,
+        arom: 482040,
+        dioptr: 2637,
+        zarga: 482063,
+        kolonna: 367,
+        popugai: 3598,
+        prokladki: 482062,
+        napitki: 273,
+        spn_m: 482019,
+        spn_n: 482018,
+    }
+    const rusData = 'rus_date'
+    const cur = 'руб'
+
+    const blogger = false
+</script>
+<!-- VUE Components -->
+<script  src="new-site-vue/build/main.min.js"></script>
+<!-- VUE Components -->
+<!-- fancybox -->
+<link rel="stylesheet" href="https://apispn.ru/css-min/fancybox-4.min.css">
+<script defer src="https://apispn.ru/js-min/fancybox-4.min.js"></script>
+<!-- fancybox -->
+<!-- other jquery plugins -->
+<script src="https://apispn.ru/js-min/jquery.maskedinput.min.js"></script>
+<!-- other jquery plugins -->
+<!-- кнопка прокрутки вверх -->
+<script>
+    function scrolling(upSelector) {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 1000) {
+                $(upSelector).fadeIn(1000);
+            } else {
+                $(upSelector).fadeOut(1000);
+            }
+        });
+        $(upSelector).click(function () {
+            $("body, html").animate({ scrollTop: 0 }, 800);
+        });
+    }
+    scrolling(".button-up");
+</script>
+<!-- кнопка прокрутки вверх -->
+</body>
+</html>

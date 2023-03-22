@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #e2e2e2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #007aeb;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px rgba(243, 250, 247, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #014e96;
+  }
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+picture {
+  display: flex;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1632px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+  @media (max-width: 575px) {
+    padding: 0 20px;
+  }
+}
+
+.title-box {
+  &__title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    color: #4f4f4f;
+
+    span {
+      color: #f82c2c;
+    }
+
+    @media (max-width: 575px) {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #4f4f4f;
+
+    @media (max-width: 575px) {
+      margin-top: 13px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+#body {
+  .tippy-box {
+    font-size: 16px !important;
+    padding: 10px !important;
+  }
+
+  .fancybox__slide {
+    padding: 5px;
+  }
+
+  .fancybox__backdrop {
+    background-color: rgba(199, 199, 199, 0.7);
+  }
+  .carousel__button.is-close:not(
+      .fancybox__iframe + .carousel__button.is-close
+    ) {
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: url("../images/modal/modal-close-btn.svg");
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s transform ease-in;
+
+    @media (max-width: 575px) {
+      top: 10px;
+      right: 9px;
+    }
+
+    svg {
+      display: none;
+    }
+
+    &:hover {
+      transform: rotate(90deg) scale(1.1);
+    }
+  }
+}

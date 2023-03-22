@@ -1,0 +1,31 @@
+input[type="text"] {
+  background: #ffffff;
+  border: 1px solid #828282;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  outline: none !important;
+  transition: 0.3s all;
+
+  @media (max-width: 575px) {
+    border-radius: 5px;
+  }
+
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.5) !important;
+  }
+
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:active,
+  &:focus {
+    color: #333333;
+    border-color: #000000;
+    background: #f2f2f2;
+  }
+}

@@ -1,0 +1,11 @@
+//Глобальные стили на всю страницу
+@import "global/Montserrat.scss";
+@import "global/Inter.scss";
+@import "global/global.scss";
+@import "tippy.js/dist/tippy.css";
+@import "tippy.js/themes/light.css";
+//Отдельные переиспользуемые компоненты
+@import "elements/btn";
+@import "elements/custom-select";
+@import "elements/custom-check";
+@import "elements/input-text";

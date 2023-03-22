@@ -1,0 +1,113 @@
+.btn-red {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  background: #f82c2c;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: 0.3s all;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100%;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(
+      100deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(214, 214, 214, 0.25) 51%,
+      rgba(0, 0, 0, 0) 76%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    filter: blur(2px);
+    transition: opacity 2s ease;
+    animation: btn-sheen 2s forwards infinite;
+  }
+
+  @media (min-width: 992px) {
+    &:hover {
+      background: rgb(192, 33, 33);
+      box-shadow: 0 4px 4px 1px rgb(192 33 33 / 32%);
+      transform: translateY(-2px);
+
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.btn-blue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+  background: #007aeb;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  transition: 0.3s all;
+  cursor: pointer;
+  @media (min-width: 992px) {
+    &:hover {
+      background: rgb(0, 101, 196);
+      box-shadow: 0 4px 5px 1px rgba(0, 101, 196, 0.32);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100%;
+    width: 100%;
+    height: 120%;
+    background: linear-gradient(
+      100deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 25%,
+      rgba(214, 214, 214, 0.25) 51%,
+      rgba(0, 0, 0, 0) 76%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    filter: blur(2px);
+    transition: opacity 2s ease;
+    animation: btn-sheen 2s forwards infinite;
+  }
+
+  @media (min-width: 992px) {
+    &:hover {
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@keyframes btn-sheen {
+  100% {
+    transform: translateY(-50%) translateX(200%);
+  }
+}
