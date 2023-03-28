@@ -63,6 +63,6 @@
     "start": "webpack --watch --mode=development --config webpack.dev.js",
     "build": "webpack --mode=production --config webpack.prod.js"
   },
-  "author": "Eugene Suloev",
+  "author": "Vadim Kolpashchikov",
   "license": "ISC"
 }
