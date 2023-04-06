@@ -8,11 +8,12 @@
         <div class="img-wrap">
           <picture>
             <source
-              srcset="new-site-vue/build/images/experiment/arom.webp"
+              data-srcset="new-site-vue/build/images/experiment/arom.webp"
               type="image/webp"
             />
             <img
-              src="new-site-vue/build/images/experiment/arom.png"
+              class="lazy"
+              data-src="new-site-vue/build/images/experiment/arom.png"
               alt="Крышка-ароматор"
             />
           </picture>

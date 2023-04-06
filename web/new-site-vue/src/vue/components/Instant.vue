@@ -17,11 +17,12 @@
           >
             <picture>
               <source
-                :srcset="`new-site-vue/build/images/instant/f-${el.value}.webp`"
+                :data-srcset="`new-site-vue/build/images/instant/f-${el.value}.webp`"
                 type="image/webp"
               />
               <img
-                :src="`new-site-vue/build/images/instant/f-${el.value}.png`"
+              class="lazy"
+                :data-src="`new-site-vue/build/images/instant/f-${el.value}.png`"
                 alt="Финляндия Экстра"
               />
             </picture>
@@ -54,7 +55,8 @@
             <div class="instant__present-wrap">
               <div class="instant__present-img">
                 <img
-                  src="new-site-vue/build/images/instant/gift.svg"
+                class="lazy"
+                  data-src="new-site-vue/build/images/instant/gift.svg"
                   alt="Финляндия Экстра"
                 />
               </div>
@@ -86,13 +88,14 @@
                 <div class="instant__card-img">
                   <picture>
                     <source
-                      :srcset="`new-site-vue/build/images/instant/element-${
+                      :data-srcset="`new-site-vue/build/images/instant/element-${
                         i + 1
                       }.webp`"
                       type="image/webp"
                     />
                     <img
-                      :src="`new-site-vue/build/images/instant/element-${
+                     class="lazy"
+                      :data-src="`new-site-vue/build/images/instant/element-${
                         i + 1
                       }.png`"
                       alt="Элементы Финляндии Экстра"

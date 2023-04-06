@@ -18,25 +18,26 @@
             <div class="card__img-wrap">
               <picture>
                 <source
-                  :srcset="`new-site-vue/build/images/steps/step-${
+                  :data-srcset="`new-site-vue/build/images/steps/step-${
                     id + 1
                   }.webp`"
                   type="image/webp"
                   media="(min-width: 576px)"
                 />
                 <source
-                  :srcset="`new-site-vue/build/images/steps/step-${id + 1}.png`"
+                  :data-srcset="`new-site-vue/build/images/steps/step-${id + 1}.png`"
                   type="image/png"
                   media="(min-width: 576px)"
                 />
                 <source
-                  :srcset="`new-site-vue/build/images/steps/step-mobil-${
+                  :data-srcset="`new-site-vue/build/images/steps/step-mobil-${
                     id + 1
                   }.webp`"
                   type="image/webp"
                 />
                 <img
-                  :src="`new-site-vue/build/images/steps/step-mobil-${
+                 class="lazy"
+                  :data-src="`new-site-vue/build/images/steps/step-mobil-${
                     id + 1
                   }.png`"
                   :alt="i.title"

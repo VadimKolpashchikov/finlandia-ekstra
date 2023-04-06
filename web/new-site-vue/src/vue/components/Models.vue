@@ -25,14 +25,14 @@
               >
                 <picture>
                   <source
-                    :srcset="`new-site-vue/build/images/models/model-${
+                    :data-srcset="`new-site-vue/build/images/models/model-${
                       id + 1
                     }.webp`"
                     type="image/webp"
                   />
                   <img
-                    class="mechanics__main-img"
-                    :src="`new-site-vue/build/images/models/model-${
+                    class="mechanics__main-img lazy"
+                    :data-src="`new-site-vue/build/images/models/model-${
                       id + 1
                     }.jpg`"
                     alt="Финляндия Экстра"

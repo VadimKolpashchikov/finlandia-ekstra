@@ -21,26 +21,27 @@
             >
               <picture>
                 <source
-                  :srcset="`new-site-vue/build/images/gallery/img-small-${
+                  :data-srcset="`new-site-vue/build/images/gallery/img-small-${
                     id + 1
                   }.webp`"
                   media="(min-width: 576px)"
                   type="image/webp"
                 />
                 <source
-                  :srcset="`new-site-vue/build/images/gallery/img-small-${
+                  :data-srcset="`new-site-vue/build/images/gallery/img-small-${
                     id + 1
                   }.png`"
                   media="(min-width: 576px)"
                 />
                 <source
-                  :srcset="`new-site-vue/build/images/gallery/img-small-mobil-${
+                  :data-srcset="`new-site-vue/build/images/gallery/img-small-mobil-${
                     id + 1
                   }.webp`"
                   type="image/webp"
                 />
                 <img
-                  :src="`new-site-vue/build/images/gallery/img-small-mobil-${
+                class="lazy"
+                  :data-src="`new-site-vue/build/images/gallery/img-small-mobil-${
                     id + 1
                   }.png`"
                   alt="Финляндии Экстра"

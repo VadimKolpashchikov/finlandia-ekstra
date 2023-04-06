@@ -50,7 +50,8 @@
             >
               <div class="delivery__feature-icon">
                 <img
-                  :src="`new-site-vue/build/images/delivery/icon-${
+                class="lazy"
+                  :data-src="`new-site-vue/build/images/delivery/icon-${
                     idx + 1
                   }.svg`"
                   :alt="el.title"
@@ -66,12 +67,12 @@
             <div class="delivery__features-img" v-for="(num, i) in 3" :key="i">
               <picture>
                 <source
-                  :srcset="`new-site-vue/build/images/delivery/img-${num}.webp`"
+                  :data-srcset="`new-site-vue/build/images/delivery/img-${num}.webp`"
                   type="image/webp"
                 />
                 <img
-                  class="mechanics__main-img"
-                  :src="`new-site-vue/build/images/delivery/img-${num}.png`"
+                  class="mechanics__main-img lazy"
+                  :data-src="`new-site-vue/build/images/delivery/img-${num}.png`"
                   alt="Способ доставки"
                 />
               </picture>

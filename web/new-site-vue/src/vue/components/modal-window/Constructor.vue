@@ -7,10 +7,10 @@
             <img
               v-for="(item, id) in mainProducts"
               :key="id"
-              :src="`new-site-vue/build/images/constructor-modal/f-${item.value}.png`"
+              :data-src="`new-site-vue/build/images/constructor-modal/f-${item.value}.png`"
               v-show="item.selected"
               alt="Финляндия экстра"
-              class=""
+              class="lazy"
             />
           </TransitionGroup>
           <div
@@ -21,7 +21,8 @@
           >
             <template v-if="dop.img">
               <img
-                :src="`new-site-vue/build/images/constructor-modal/${dop.img}.png`"
+                class="lazy"
+                :data-src="`new-site-vue/build/images/constructor-modal/${dop.img}.png`"
                 alt="Финляндия экстра дополнительно"
               />
             </template>

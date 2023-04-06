@@ -6,11 +6,12 @@
         <div class="title-box__img">
           <picture>
             <source
-              srcset="new-site-vue/build/images/rassrochka/tinkoff.webp"
+              data-srcset="new-site-vue/build/images/rassrochka/tinkoff.webp"
               type="image/webp"
             />
             <img
-              src="new-site-vue/build/images//rassrochka/tinkoff.png"
+            class="lazy"
+              data-src="new-site-vue/build/images//rassrochka/tinkoff.png"
               alt="Тинькофф Лого"
             />
           </picture>
@@ -63,13 +64,14 @@
           <div class="info-box__img-absolute">
             <picture>
               <source
-                srcset="
+                data-srcset="
                   new-site-vue/build/images/rassrochka/rassrochka-img.webp
                 "
                 type="image/webp"
               />
               <img
-                src="new-site-vue/build/images/rassrochka/rassrochka-img.png"
+              class="lazy"
+                data-src="new-site-vue/build/images/rassrochka/rassrochka-img.png"
                 alt="Покупка в рассрочку"
               />
             </picture>

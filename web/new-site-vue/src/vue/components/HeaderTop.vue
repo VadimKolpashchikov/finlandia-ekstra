@@ -97,6 +97,7 @@ export default {
         behavior: "smooth",
         block: "start",
       });
+      this.mobilMenuShow = false
     },
   },
   created() {

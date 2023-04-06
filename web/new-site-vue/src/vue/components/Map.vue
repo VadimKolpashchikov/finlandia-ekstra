@@ -124,7 +124,7 @@ export default {
         };
       };
       this.pageLoad = false;
-    }, 2500);
+    }, 100);
   },
 };
 </script>

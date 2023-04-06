@@ -178,14 +178,14 @@ export default createStore({
     },
     oneId:
       (state) =>
-      (id = "f15") => {
-        return state.ids[id];
-      },
+        (id = "f15") => {
+          return state.ids[id];
+        },
     oneProduct:
       (state) =>
-      (id = "f15") => {
-        return state.goods[state.ids[id]];
-      },
+        (id = "f15") => {
+          return state.goods[state.ids[id]];
+        },
     tomorrow(state) {
       return state.rusData;
     },

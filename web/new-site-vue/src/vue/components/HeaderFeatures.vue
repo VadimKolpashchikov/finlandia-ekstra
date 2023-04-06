@@ -8,7 +8,8 @@
         <div class="header-features__item">
           <div class="header-features__img-box">
             <img
-              src="new-site-vue/build/images/header-features/features-1.svg"
+            class="lazy"
+              data-src="new-site-vue/build/images/header-features/features-1.svg"
               alt=""
             />
           </div>
@@ -23,7 +24,8 @@
         <div class="header-features__item">
           <div class="header-features__img-box">
             <img
-              src="new-site-vue/build/images/header-features/features-2.svg"
+            class="lazy"
+              data-src="new-site-vue/build/images/header-features/features-2.svg"
               alt=""
             />
           </div>
@@ -38,7 +40,8 @@
         <div class="header-features__item">
           <div class="header-features__img-box">
             <img
-              src="new-site-vue/build/images/header-features/features-3.svg"
+            class="lazy"
+              data-src="new-site-vue/build/images/header-features/features-3.svg"
               alt=""
             />
           </div>
@@ -53,7 +56,8 @@
         <div class="header-features__item">
           <div class="header-features__img-box">
             <img
-              src="new-site-vue/build/images/header-features/features-4.svg"
+            class="lazy"
+              data-src="new-site-vue/build/images/header-features/features-4.svg"
               alt=""
             />
           </div>

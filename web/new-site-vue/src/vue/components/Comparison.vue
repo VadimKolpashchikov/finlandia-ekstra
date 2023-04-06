@@ -13,13 +13,14 @@
               <div class="lists-box__img-wrap">
                 <picture>
                   <source
-                    srcset="
+                     data-srcset="
                       new-site-vue/build/images/comparison/comparison-1.webp
                     "
                     type="image/webp"
                   />
                   <img
-                    src="new-site-vue/build/comparison/comparison-1.png"
+                  class="lazy"
+                     data-src="new-site-vue/build/comparison/comparison-1.png"
                     alt="Сравнение напитков"
                   />
                 </picture>
@@ -37,14 +38,15 @@
               <div class="lists-box__img-wrap">
                 <picture>
                   <source
-                    srcset="
+                     data-srcset="
                       new-site-vue/build/images/comparison/comparison-2.webp
                     "
                     type="image/webp"
                   />
                   <img
-                    src="new-site-vue/build/images/comparison/comparison-2.png"
-                    alt="Покупка в рассрочку"
+                  class="lazy"
+                     data-src="new-site-vue/build/images/comparison/comparison-2.png"
+                    alt="Сравнение напитков"
                   />
                 </picture>
               </div>

@@ -15,7 +15,8 @@
                 type="image/webp"
               />
               <img
-                :src="`new-site-vue/build/images/order-modal/f-${el.value}.png`"
+              class="lazy"
+                :data-src="`new-site-vue/build/images/order-modal/f-${el.value}.png`"
                 alt="Финляндия Экстра"
               />
             </picture>

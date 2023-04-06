@@ -13,13 +13,14 @@
             <div class="img-wrap" v-for="(img, idx) in 4" :key="idx">
               <picture>
                 <source
-                  :srcset="`new-site-vue/build/images/guarantee/guarantee-${
+                  :data-srcset="`new-site-vue/build/images/guarantee/guarantee-${
                     idx + 1
                   }.webp`"
                   type="image/webp"
                 />
                 <img
-                  :src="`new-site-vue/build/images/guarantee/guarantee-${
+                class="lazy"
+                  :data-src="`new-site-vue/build/images/guarantee/guarantee-${
                     idx + 1
                   }.png`"
                   alt="Гарантии качества"

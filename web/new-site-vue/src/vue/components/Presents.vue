@@ -49,11 +49,12 @@
                   <div class="present__img-wrap">
                     <picture>
                       <source
-                        :srcset="`new-site-vue/build/images/presents/${item.img}.webp`"
+                        :data-srcset="`new-site-vue/build/images/presents/${item.img}.webp`"
                         type="image/webp"
                       />
                       <img
-                        :src="`new-site-vue/build/images//presents/${item.img}.png`"
+                        class="lazy"
+                        :data-src="`new-site-vue/build/images//presents/${item.img}.png`"
                         :alt="item.title"
                         :onload="
                           addTippy(`.present__link-${id + 1}`, item.description)

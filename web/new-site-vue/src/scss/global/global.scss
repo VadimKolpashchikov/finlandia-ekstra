@@ -37,6 +37,15 @@ body {
   }
 }
 
+img {
+  transition: 0.35s all;
+}
+
+img:not([src]):not([srcset]) {
+  opacity: 0;
+  transform: scale(0.92);
+}
+
 #app {
   height: 100%;
   width: 100%;

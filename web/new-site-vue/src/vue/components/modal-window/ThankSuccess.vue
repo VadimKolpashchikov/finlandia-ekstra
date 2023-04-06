@@ -18,7 +18,8 @@
             type="image/png"
           />
           <img
-            src="new-site-vue/build/images/modal/thank-success-img.png"
+          class="lazy"
+            data-src="new-site-vue/build/images/modal/thank-success-img.png"
             alt="Благодарим за доверие!"
           />
         </picture>

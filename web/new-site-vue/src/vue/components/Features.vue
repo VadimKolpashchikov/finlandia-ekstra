@@ -15,26 +15,27 @@
           <div class="feature__img" v-if="el.sliderCount == 0">
             <picture>
               <source
-                :srcset="`new-site-vue/build/images/features/feature-${
+                :data-srcset="`new-site-vue/build/images/features/feature-${
                   id + 1
                 }.webp`"
                 type="image/webp"
                 media="(min-width: 576px)"
               />
               <source
-                :src="`new-site-vue/build/images/features/feature-${
+                :data-src="`new-site-vue/build/images/features/feature-${
                   id + 1
                 }.jpg`"
                 media="(min-width: 576px)"
               />
               <source
-                :srcset="`new-site-vue/build/images/features/feature-${
+                :data-srcset="`new-site-vue/build/images/features/feature-${
                   id + 1
                 }-mobil.webp`"
                 type="image/webp"
               />
               <img
-                :src="`new-site-vue/build/images/features/feature-${
+              class="lazy"
+                :data-src="`new-site-vue/build/images/features/feature-${
                   id + 1
                 }-mobil.jpg`"
                 :alt="el.title"
@@ -50,26 +51,27 @@
               >
                 <picture>
                   <source
-                    :srcset="`new-site-vue/build/images/features/feature-${
+                    :data-srcset="`new-site-vue/build/images/features/feature-${
                       id + 1
                     }-${num + 1}.webp`"
                     type="image/webp"
                     media="(min-width: 576px)"
                   />
                   <source
-                    :src="`new-site-vue/build/images/features/feature-${
+                    :data-src="`new-site-vue/build/images/features/feature-${
                       id + 1
                     }-${num + 1}.jpg`"
                     media="(min-width: 576px)"
                   />
                   <source
-                    :srcset="`new-site-vue/build/images/features/feature-${
+                    :data-srcset="`new-site-vue/build/images/features/feature-${
                       id + 1
                     }-${num + 1}-mobil.webp`"
                     type="image/webp"
                   />
                   <img
-                    :src="`new-site-vue/build/images/features/feature-${
+                  class="lazy"
+                    :data-src="`new-site-vue/build/images/features/feature-${
                       id + 1
                     }-${num + 1}-mobil.jpg`"
                     :alt="el.title"

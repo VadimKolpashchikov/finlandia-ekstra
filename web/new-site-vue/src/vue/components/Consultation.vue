@@ -11,11 +11,12 @@
           <div class="consultation__img-wrap">
             <picture>
               <source
-                srcset="new-site-vue/build/images/consultation/mobil-phone.webp"
+                data-srcset="new-site-vue/build/images/consultation/mobil-phone.webp"
                 type="image/webp"
               />
               <img
-                src="new-site-vue/build/images/consultation/mobil-phone.png"
+                class="lazy"
+                data-src="new-site-vue/build/images/consultation/mobil-phone.png"
                 alt="Консультация по телефону"
               />
             </picture>

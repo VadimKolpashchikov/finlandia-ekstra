@@ -17,13 +17,14 @@
               <div class="zmeevik__features-img-wrap">
                 <picture>
                   <source
-                    :srcset="`new-site-vue/build/images/zmeevik/feature-${
+                    :data-srcset="`new-site-vue/build/images/zmeevik/feature-${
                       id + 1
                     }.webp`"
                     type="image/webp"
                   />
                   <img
-                    :src="`new-site-vue/build/images/zmeevik/feature-${
+                   class="lazy"
+                    :data-src="`new-site-vue/build/images/zmeevik/feature-${
                       id + 1
                     }.png`"
                     :alt="i.title"
@@ -46,11 +47,12 @@
         <div class="zmeevik__img-wrap">
           <picture>
             <source
-              srcset="new-site-vue/build/images/zmeevik/zmeevik.webp"
+              data-srcset="new-site-vue/build/images/zmeevik/zmeevik.webp"
               type="image/webp"
             />
             <img
-              src="new-site-vue/build/images/zmeevik/zmeevik.png"
+             class="lazy"
+              data-src="new-site-vue/build/images/zmeevik/zmeevik.png"
               alt="Холодильник со змеевиком на 15 витков"
             />
           </picture>

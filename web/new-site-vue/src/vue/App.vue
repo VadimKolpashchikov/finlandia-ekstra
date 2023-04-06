@@ -2,7 +2,7 @@
   <div>
     <header>
       <HeaderTop />
-      <HeaderNew />
+      <HeaderNew2 />
       <HeaderFeatures />
     </header>
     <main>
@@ -43,7 +43,7 @@
 
 <script>
 import HeaderTop from "./components/HeaderTop.vue";
-import HeaderNew from "./components/HeaderNew.vue";
+import HeaderNew2 from "./components/HeaderNew2.vue";
 import HeaderFeatures from "./components/HeaderFeatures.vue";
 
 // Блоки Main
@@ -84,7 +84,7 @@ import LazyLoad from "vanilla-lazyload";
 export default {
   components: {
     HeaderTop,
-    HeaderNew,
+    HeaderNew2,
     HeaderFeatures,
 
     // блоки main
@@ -123,9 +123,7 @@ export default {
   mounted() {
     setTimeout(() => {
       (function () {
-        var lazyLoadInstance = new LazyLoad({
-          use_native: true,
-        });
+        var lazyLoadInstance = new LazyLoad();
       })();
     }, 10);
   },

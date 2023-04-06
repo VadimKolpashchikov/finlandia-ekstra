@@ -9,6 +9,7 @@
         <div class="mechanics__img-wrap">
           <video
             class="lazy"
+            preload="none"
             data-src="new-site-vue/build/video/mechanics.mp4"
             autoplay="autoplay"
             loop="loop"

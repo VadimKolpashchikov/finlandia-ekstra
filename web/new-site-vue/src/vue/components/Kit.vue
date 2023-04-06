@@ -28,12 +28,12 @@
             <div class="dops-item__icon">
               <picture>
                 <source
-                  :srcset="`new-site-vue/build/images/kit/${dop.img}-icon.webp`"
+                  :data-srcset="`new-site-vue/build/images/kit/${dop.img}-icon.webp`"
                   type="image/webp"
                 />
                 <img
-                  class="mechanics__main-img"
-                  :src="`new-site-vue/build/images/kit/${dop.img}-icon.png`"
+                  class="mechanics__main-img lazy"
+                  :data-src="`new-site-vue/build/images/kit/${dop.img}-icon.png`"
                   :alt="dop.title"
                 />
               </picture>
@@ -72,11 +72,12 @@
               >
                 <picture>
                   <source
-                    :srcset="`new-site-vue/build/images/kit/${el.img}.webp`"
+                    :data-srcset="`new-site-vue/build/images/kit/${el.img}.webp`"
                     type="image/webp"
                   />
                   <img
-                    :src="`new-site-vue/build/images/kit/${el.img}.png`"
+                    class="lazy"
+                    :data-src="`new-site-vue/build/images/kit/${el.img}.png`"
                     alt="Финляндия Экстра"
                   />
                 </picture>
@@ -90,9 +91,9 @@
             >
               <template v-if="dop.img != 'prokladki-dop'">
                 <img
+                  class="lazy"
                   :data-src="`new-site-vue/build/images/constructor-modal/${dop.img}.png`"
                   alt="Финляндия экстра дополнительные товары"
-                  class="lazy"
                 />
               </template>
             </div>
