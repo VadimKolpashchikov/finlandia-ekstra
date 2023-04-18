@@ -59,7 +59,7 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 export default {
-  name: "Select",
+  name: "MySelect",
   computed: mapGetters([
     "oneProduct",
     "oneId",

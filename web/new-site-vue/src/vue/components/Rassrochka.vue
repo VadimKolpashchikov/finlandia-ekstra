@@ -64,13 +64,13 @@
           <div class="info-box__img-absolute">
             <picture>
               <source
-                data-srcset="
+                srcset="
                   new-site-vue/build/images/rassrochka/rassrochka-img.webp
                 "
                 type="image/webp"
               />
               <img
-              class="lazy"
+                class="lazy"
                 data-src="new-site-vue/build/images/rassrochka/rassrochka-img.png"
                 alt="Покупка в рассрочку"
               />

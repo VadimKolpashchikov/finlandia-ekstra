@@ -151,7 +151,7 @@
                 v-if="ifBlogger"
                 v-html="bloggerInputs"
               ></div>
-              <Podarok />
+              <podarok />
               <div v-for="(dop, id) in dops" :key="id">
                 <input
                   type="hidden"
@@ -181,7 +181,7 @@
                 class="main_product"
                 v-bind:value="mainProductId"
               />
-              <InputsBox />
+              <inputs-box />
               <div class="fixed-box">
                 <div class="constructor-new__price-box">
                   <div class="constructor-new__price-wrap">

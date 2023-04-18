@@ -1,43 +1,44 @@
 <template>
   <div>
     <header>
-      <HeaderTop />
-      <HeaderNew2 />
-      <HeaderFeatures />
+      <header-top />
+      <header-new2 />
+      <header-features />
     </header>
     <main>
-      <WorkingMode />
-      <Presents />
-      <Zmeevik />
-      <Steps />
-      <Instant />
-      <Mechanics />
-      <Features />
-      <Models />
-      <Delivery />
-      <Creation />
-      <Experiment />
-      <Braga />
-      <Kit />
-      <Comparison />
-      <Feedback />
-      <Rassrochka />
-      <Guarantee />
-      <Consultation />
-      <Gallery />
-      <Map />
+      <working-mode />
+      <presents />
+      <zmeevik />
+      <steps />
+      <instant />
+      <mechanics />
+      <features />
+      <models />
+      <delivery />
+      <creation />
+      <experiment />
+      <braga />
+      <kit />
+      <comparison />
+      <feedback />
+      <review-video />
+      <rassrochka />
+      <guarantee />
+      <consultation />
+      <gallery />
+      <map />
     </main>
-    <FooterNew />
-    <ButtonUp />
+    <footer-new />
+    <button-up />
 
     <!-- Модальные окна -->
-    <OrderModal />
-    <ConstructorModal />
-    <PresentModal />
-    <RecipeModal />
-    <CallMe />
-    <OrderSuccess />
-    <ThankSuccess />
+    <order-modal />
+    <constructor-modal />
+    <present-modal />
+    <recipe-modal />
+    <call-me />
+    <order-success />
+    <thank-success />
   </div>
 </template>
 
@@ -61,6 +62,7 @@ import Experiment from "./components/Experiment.vue";
 import Braga from "./components/Braga.vue";
 import Kit from "./components/Kit.vue";
 import Feedback from "./components/Feedback.vue";
+import ReviewVideo from "./components/ReviewVideo.vue";
 import Comparison from "./components/Comparison.vue";
 import Rassrochka from "./components/Rassrochka.vue";
 import Guarantee from "./components/Guarantee.vue";
@@ -103,6 +105,7 @@ export default {
     Kit,
     Comparison,
     Feedback,
+    ReviewVideo,
     Rassrochka,
     Guarantee,
     Consultation,
@@ -125,7 +128,7 @@ export default {
       (function () {
         var lazyLoadInstance = new LazyLoad();
       })();
-    }, 10);
+    }, 100);
   },
 };
 </script>

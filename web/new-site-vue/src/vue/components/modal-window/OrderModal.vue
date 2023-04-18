@@ -15,7 +15,7 @@
                 type="image/webp"
               />
               <img
-              class="lazy"
+                class="lazy"
                 :data-src="`new-site-vue/build/images/order-modal/f-${el.value}.png`"
                 alt="Финляндия Экстра"
               />
@@ -29,7 +29,7 @@
           с выгодой {{ orderState.discont }}% за
           <b>{{ orderState.price }}&nbsp;руб.</b>
         </p>
-        <Select />
+        <my-select />
         <form
           action="sendOrder.php"
           method="post"
@@ -37,7 +37,7 @@
         >
           <div class="blogger" v-if="ifBlogger" v-html="bloggerInputs"></div>
 
-          <Podarok />
+          <podarok />
 
           <input
             type="hidden"
@@ -60,7 +60,7 @@
             name="comment"
             :value="orderState.rassrochka ? 'Покупка в рассрочку.' : ''"
           />
-          <InputsBox />
+          <inputs-box />
           <div class="order-modal__rassrochka-wrap">
             <label class="order-modal__rassrochka-check custom-check">
               <input type="checkbox" v-model="orderState.rassrochka" />
@@ -88,13 +88,13 @@
 <script>
 import { mapGetters } from "vuex";
 import InputsBox from "../helpers/InputsBox.vue";
-import Select from "../helpers/Select.vue";
+import MySelect from "../helpers/Select.vue";
 import Podarok from "../helpers/Podarok.vue";
 export default {
   name: "OrderModal",
   components: {
     InputsBox,
-    Select,
+    MySelect,
     Podarok,
   },
   beforeMount() {},

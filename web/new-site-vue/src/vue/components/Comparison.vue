@@ -13,7 +13,7 @@
               <div class="lists-box__img-wrap">
                 <picture>
                   <source
-                     data-srcset="
+                     srcset="
                       new-site-vue/build/images/comparison/comparison-1.webp
                     "
                     type="image/webp"
@@ -38,7 +38,7 @@
               <div class="lists-box__img-wrap">
                 <picture>
                   <source
-                     data-srcset="
+                     srcset="
                       new-site-vue/build/images/comparison/comparison-2.webp
                     "
                     type="image/webp"

@@ -18,7 +18,7 @@
             <div class="card__img-wrap">
               <picture>
                 <source
-                  :data-srcset="`new-site-vue/build/images/steps/step-${
+                  :srcset="`new-site-vue/build/images/steps/step-${
                     id + 1
                   }.webp`"
                   type="image/webp"
@@ -292,6 +292,11 @@ export default {
       justify-content: center;
       flex-shrink: 0;
       background: #f3f3f3;
+
+      img:not([data-ll-status="loaded"]) {
+        aspect-ratio: 85/43;
+      }
+
       img {
         max-width: 100%;
 
