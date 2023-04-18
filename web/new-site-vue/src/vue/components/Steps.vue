@@ -30,7 +30,7 @@
                   media="(min-width: 576px)"
                 />
                 <source
-                  :data-srcset="`new-site-vue/build/images/steps/step-mobil-${
+                  :srcset="`new-site-vue/build/images/steps/step-mobil-${
                     id + 1
                   }.webp`"
                   type="image/webp"
