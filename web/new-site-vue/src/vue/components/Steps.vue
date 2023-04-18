@@ -292,9 +292,9 @@ export default {
       justify-content: center;
       flex-shrink: 0;
       background: #f3f3f3;
-
-      img:not([data-ll-status="loaded"]) {
+      img:not([src]):not([srcset]) {
         aspect-ratio: 85/43;
+        width: 100%;
       }
 
       img {
