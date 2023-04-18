@@ -26,7 +26,7 @@
       <guarantee />
       <consultation />
       <gallery />
-      <map />
+      <my-map />
     </main>
     <footer-new />
     <button-up />
@@ -68,7 +68,7 @@ import Rassrochka from "./components/Rassrochka.vue";
 import Guarantee from "./components/Guarantee.vue";
 import Consultation from "./components/Consultation.vue";
 import Gallery from "./components/Gallery.vue";
-import Map from "./components/Map.vue";
+import MyMap from "./components/Map.vue";
 import FooterNew from "./components/FooterNew.vue";
 import ButtonUp from "./components/ButtonUp.vue";
 
@@ -110,7 +110,7 @@ export default {
     Guarantee,
     Consultation,
     Gallery,
-    Map,
+    MyMap,
     FooterNew,
     ButtonUp,
 
